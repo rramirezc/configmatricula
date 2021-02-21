@@ -1,0 +1,15 @@
+#HTTP Server
+server:
+  port: 1112
+
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /infoMatricula
+    health-check-url-path: /healthMatricula
+    metadata-map:
+       app-owner: rjrc
+       description: microservice matricula
